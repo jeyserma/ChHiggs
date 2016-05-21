@@ -22,5 +22,9 @@ mkdir $BASE
 python fastsetup.py -v CMSSW_7_6_4 -t master -d $BASE 
 
 # Build ChargedHiggs
-#d $BASE/CMSSW_7_6_4/src
-#cmsenv
+cd $BASE/CMSSW_7_6_4/src
+cmsenv
+
+git clone git@github.com:MiT-HEP/ChargedHiggs.git ChargedHiggs
+cd ChargedHiggs
+make -j 16
