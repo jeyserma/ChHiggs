@@ -19,7 +19,7 @@ PYTHONPATH=.:$PYTHONPATH
 # Start building
 BASE=/afs/cern.ch/work/$(echo -n $USER | head -c 1)/${USER}/production
 mkdir $BASE
-python fastsetup.py -v CMSSW_7_6_4 -t master -d $BASE --download=NeroProducer/Nero/test,https://gist.github.com/amarini/b30a8b629934e4508a5de66a82d97381/archive/6456b3fadb0364e693caf3b8fd56377adceb2632.zip
+python fastsetup.py -v CMSSW_7_6_4 -t master -d $BASE 
 
 # Build ChargedHiggs
 #d $BASE/CMSSW_7_6_4/src
