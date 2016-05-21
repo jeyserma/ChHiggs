@@ -17,7 +17,7 @@ PYTHONPATH=.:$PYTHONPATH
 
 
 # Start building
-BASE=/afs/cern.ch/work/$(echo -n $USER | head -c 1)/${USER}/production
+BASE=/afs/cern.ch/user/$(echo -n $USER | head -c 1)/${USER}/CHARGED_HIGGS/test1
 mkdir $BASE
 python fastsetup.py -v CMSSW_7_6_4 -t master -d $BASE 
 
